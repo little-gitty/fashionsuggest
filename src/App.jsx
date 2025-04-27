@@ -8,10 +8,10 @@ import "./styles.css";
 const App = () => {
     return (
         <div className="app-container">
-            <WeatherSection />
-            <SlidingPanel>
-                <ImageUploadSection />
-            </SlidingPanel>
+            <SlidingPanel
+                weatherContent={<WeatherSection />}
+                filesContent={<ImageUploadSection />}
+            />
             <ChatSection />
         </div>
     );
